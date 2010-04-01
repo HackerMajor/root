@@ -1,25 +1,34 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />		
 <title> CV de Cédric Levasseur </title>
-<style>
+<style type="text/css">
   *{
     margin : auto;
     padding : 0;
   }
   body{
-    width : 80%;
+    /*width : 80%;*/
+    background-color : #719bb4;
   }
   h1 { 
     font-size : 70px; 
   }
   h2 {
     font-size : 16px;
-    margin-left : 15px;  
+    margin-left : 0px;  
   }
   h3 {
     font-size : 14px;
+    margin-left : 15px;  
   }
   h4 {
+    font-size : 12px;
+    
+  }
+  h5 {
     font-size : 12px;
   }
   address {
@@ -91,20 +100,76 @@
   }
 /* competences */
   div#competences {
-    position : absolute;
+    position : fixed;
     right : 0;
-    width : 20%;
-    top : 300px;
-    -moz-border-radius : 30px;
+    width : 17%;
+    height : 620px;
+    top : 150px;
     padding:15px;
-    
+    z-index : 200;
+    background : transparent url(parch.png) no-repeat 50% 50% ;
+    }
+  
+  h3#competence {
+    background : transparent url(competences.png) no-repeat bottom;
+    padding : 25px 200px 25px 0px  ;
   }
+
+
   ul.competences {
     list-style-type :  none;
-    padding : 10px 0;
+    padding-left : 20%;
+    padding-bottom : 4%;
   }
   #wrapper {
-    /*margin : auto;*/
+    margin-right : 20%;
+    width : 80%;
+  }
+
+  #footer {
+    background:transparent url(./chv.png) repeat scroll 0 0;
+    clear:both;
+    position:relative;
+    z-index:20;
+    padding-bottom : 1383px;
+}
+
+  #entete h1 {
+	  background : transparent url(./banner.png) no-repeat center center;
+	  height : 222px; 
+	  width : 900px;
+  }
+  #entete h1 span {
+  	display : none;
+  }
+  #entete h2 {
+  	margin :auto;
+	text-align : center;
+	padding-top: 60px;
+  }
+  #enteteCadre1 {
+	  /*background : transparent url(./shield.jpg) no-repeat left center;*/
+	  margin : 20px;
+  }
+  h3 > span {
+    display : none;
+  }
+
+  h3#diplomes {
+    background : transparent url(diplomes.png) no-repeat;
+    padding : 25px 200px ;
+  }
+  h3#experience1 {
+    background : transparent url(experience1.png) no-repeat;
+    padding : 25px 200px ;
+  }	  
+  h3#experience2 {
+    background : transparent url(experience2.png) no-repeat;
+    padding : 25px 200px ;
+  }
+  h3#divers {
+    background : transparent url(divers.png) no-repeat;
+    padding : 25px 200px ;
   }
 
  .bkaki1       { background-color : #7BA853; }
@@ -143,21 +208,21 @@
 </style>
 </head>
 <body>
-<div id="wrapper">
-<div id="entete" class="bvertpastel3">
+<div id="entete" >
 <h1> <span class="blanc">Cédric</span> <span class="blanc">Levasseur</span></h1>
-<div id="enteteCadre1" class="bgris1">
-<h2>Ingénieur d'études et développement web</h2>
-<h2>35 ans, célibataire</h2>
+<div id="enteteCadre1" >
+	<h2>Chevalier Ingénieur web<br/>java html css</h2>
+<h3>35 ans, célibataire</h3>
 <address>
   32 rue Maurice Berteaux<br/>
   92700 Colombes<br/>
   06 62 87 34 76<br/>
   <a href="mailto:jobs@levasseur.nom.fr">jobs@levasseur.nom.fr</a><br/>
 </address>
-</div>
-</div>
-<h3>Diplômes :</h3>
+</div><!--enteteCadre1-->
+</div><!--entete-->
+<div id="wrapper">
+<h3 id="diplomes"><span>Diplômes :</span></h3>
 <ul class="timeline timeline5">
   <li class="d1an bvertpastel1">1995</li>
   <li class="d1an bvert1">96</li>
@@ -169,13 +234,13 @@
 <ul class="timeline timeline5">
   <li class="d1an"><p>Baccalauréat ES<br/>Lycée Claude Monet<br/>Le Havre (76)<br/></p></li>
   <li class="d2ans"><p>Dut Informatique<br/>IUP Schumann<br/>Le Havre</p></li>
-  <li class="d1an"><p>Licence Génie Math & Info<br/>IUP ROUEN<br/></p></li>
-  <li class="d1an"><p>Maitrise Génie Math & Info<br/>IUP ROUEN<br/></p></li>
-  <li class="d1an"><p>DESS Génie Math & Info<br/>Systèmes Distribués, Parallélisme<br/>UFR Besançon</p></li>
+  <li class="d1an"><p>Licence Génie Math &amp; Info<br/>IUP ROUEN<br/></p></li>
+  <li class="d1an"><p>Maitrise Génie Math &amp; Info<br/>IUP ROUEN<br/></p></li>
+  <li class="d1an"><p>DESS Génie Math &amp; Info<br/>Systèmes Distribués, Parallélisme<br/>UFR Besançon</p></li>
 </ul>
-<hr class="spacer">
+<hr class="spacer"/>
 
-<h3>Expérience :</h3>
+<h3 id="experience1"><span>Expérience :</span></h3>
 <ul class="timeline timeline10">
   <li class="d1an bvert1">2000</li>
   <li class="d1an bvert1">01</li>
@@ -196,41 +261,8 @@
 </ul>
 
 
-<hr class="spacer">
-<div id="competences" class="bgris1">
-  <h3>Compétences Techniques :</h3>
-  <ul class="competences db">
-    <li>mysql</li>
-  </ul><ul class="competences navigateur">
-    <li>css</li>
-    <li>xhtml</li>
-    <li>jquery</li>
-    <li>javascript</li>
-    <li>firebug</li>
-  </ul><ul class="competences java">
-    <li>java 6</li>
-    <li>maven</li>
-    <li>struts 2</li>
-    <li>ant</li>
-    <li>junit</li>
-  </ul><ul class="competences adm">
-    <li>apache</li>
-    <li>tomcat</li>
-    <li>bash</li>
-    <li>vi</li>
-    <li>linux</li>
-  </ul><ul class="competences metho">
-    <li>test unitaire</li>
-    <li>scrum</li>
-    <li>build continu</li>
-  </ul><ul class="competences cms">
-    <li>wordpress</li>
-    <li>dotclear</li>
-    <li>liferay</li>
-  </ul>
-</div><!-- fin competence-->
-
-<h3>Expérience</h3>
+<hr class="spacer"/>
+<h3 id="experience2"><span>Expérience Détaillée</span></h3>
 <h4>Vidal</h4>
   <p> Vidal est la société leader dans la diffusion d’information sur les produits de santé. Cette société produit le gros livre rouge présent chez tous les médécins, des sites webs,
  des cdroms, des apis. Ces clients sont des médecins, des pharmaciens, des hopitaux ...</p>
@@ -263,7 +295,166 @@
 <h4>Linux@Business</h4>
   <p>Dans cette start-up fondée en 2000, J'ai débuté mon métier de développeur web, dans un environnement Linux. Conception, Réalisation, Documentation</p>
   <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
+  <p>Mots clés : Java 1.3 et 1.4, CSS, XML, MVC et CMS SPIP</p>
       
 </div> <!--wrapper-->
+<div id="competences">
+<h3 id="competence"><span>Compétences Techniques :</span></h3>
+  <ul class="competences db">
+    <li>mysql</li>
+  </ul><ul class="competences navigateur">
+    <li>css</li>
+    <li>xhtml</li>
+    <li>jquery</li>
+    <li>javascript</li>
+    <li>firebug</li>
+  </ul><ul class="competences java">
+    <li>java 6</li>
+    <li>maven</li>
+    <li>struts 2</li>
+    <li>ant</li>
+    <li>junit</li>
+  </ul><ul class="competences adm">
+    <li>apache</li>
+    <li>tomcat</li>
+    <li>bash</li>
+    <li>vi</li>
+    <li>linux</li>
+  </ul><ul class="competences metho">
+    <li>test unitaire</li>
+    <li>scrum</li>
+    <li>build continu</li>
+  </ul><ul class="competences cms">
+    <li>wordpress</li>
+    <li>dotclear</li>
+    <li>liferay</li>
+  </ul>
+</div><!-- fin competence-->
+<div id="footer"></div><!-- fin footer -->
 </body>
 </html>
