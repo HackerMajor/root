@@ -1,0 +1,62 @@
+<!-- Start Divider Bottom -->
+<div id="divider2"></div>
+<!-- End Divider Bottom -->
+
+<!-- Start Level 5 -->
+<div id="level5">
+
+<!-- Start Services  -->
+<div id="services">
+<h1>Domaines d'intervention</h1>
+<tpl:Categories url="production">
+       <ul><li><a href="{{tpl:CategoryURL}}" title="{{tpl:CategoryTitle
+encode_html="1"}}">
+               {{tpl:CategoryTitle encode_html="1"}}</a></li>
+           <ul>
+               <tpl:Entries category="production">
+               <li>{{tpl:EntryTitle encode_html="1"}}</li>
+               </tpl:Entries>
+           </ul>
+	</ul>
+       </tpl:Categories>
+<ul>
+<li><a href="./index.php">Droit de l'immigration</a></li>
+<li><a href="./index.php">Droit de la famille</a></li>
+<li><a href="./index.php">Litiges liés au code de la route</a></li>
+</ul>
+</div>
+<!-- End Services -->
+  <div id="blogextra">
+    {{tpl:Widgets type="extra"}}
+ </div> <!-- End #blogextra -->a
+  
+</div>
+<!-- End of Level 5 -->
+
+</div>
+<!-- END OF WRAPPER -->
+</div>
+<!-- END OF WRAPPER-->
+
+
+<!-- Start Footer -->
+<div id="footer">
+
+<!-- Start Footer Wrapper -->
+
+<div id="footer_textwrapper">
+<!-- Start Footer Icons -->
+<div id="footer_icons">
+</div>
+<!-- End Footer Icons -->
+
+<!-- Start Copyright -->
+<div id="footer_text">Copyright © 2010 Jessie Foulhioux | Réalisation Cédric Levasseur | {{tpl:SysPoweredBy}} </div>
+<!-- End Copyright -->
+ 
+</div>
+<!-- End Footer Wrapper -->
+
+</div>
+<!-- End Footer -->
+{{tpl:SysBehavior behavior="publicFooterContent"}}

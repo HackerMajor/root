@@ -1,0 +1,56 @@
+.meta0 {  }
+.meta10 { font-size: 140%; }
+.meta20 { font-size: 150%; }
+.meta30 { font-size: 160%; }
+.meta40 { font-size: 170%; }
+.meta50 { font-size: 180%; }
+.meta60 { font-size: 190%; }
+.meta70 { font-size: 200%; }
+.meta80 { font-size: 210%; }
+.meta90 { font-size: 220%; }
+.meta100 { font-size: 230%; }
+
+table.tags {
+	margin-left: 3em;
+}
+
+
+tr.tagLetter span {
+	font-size : 250%;
+	border: none;
+	display : block;
+	width: 1ex;
+	position: relative;
+	top: 0.80em;
+	left: -2ex;
+}
+
+ul.metaList {
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+ul.metaList li {
+	margin: 0;
+	padding: 0;
+	list-style: square;
+	list-style-position: inside;
+}
+
+a.metaRemove {
+	color : #999 !important;
+	border: none;
+}
+a.metaRemove:hover, a.metaRemove:focus {
+	color : #06c !important;
+}
+
+.addMeta a {
+	border: none;
+}
+.addMeta a:hover, .addMeta a:focus {
+	background: #fc0;
+	color: #000;
+}
+.addMeta a.metaGetMore {
+	font-weight: bold;
+}

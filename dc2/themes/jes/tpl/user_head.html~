@@ -1,0 +1,36 @@
+<!-- # This template is included at the end of _head.html template -->
+<!-- Start Wrapper -->
+<div class="wrapper">
+
+<!-- Start Logo -->
+<div class="logo"></div>
+<!-- End Logo -->
+
+<!-- Start Menu -->
+<div id="menu_wrapper">
+<div id="menu">
+<ul>
+<li><a href="./index.php" id="selected">Accueil</a></li>
+<li><a href="./index.php">Contact</a></li>
+<li><a href="./index.php">Domaine d'intervention</a></li>
+<li><a href="./index.php">Honoraires</a></li>
+<li><a href="./index.php">Actualités</a></li>
+</ul>
+<br style="clear: left" />
+</div>
+</div>
+<!-- End Menu -->
+
+<!-- Start Header Message  -->
+<div id="header">
+<h1><span style="color: #96ca49;">Maître Jessie Foulhioux</span> Avocate à la cour d'Aix en Provence</h2>
+<p>Vous défend dans vos litiges et vous propose ses conseils</p>
+</div>
+<!-- End Header Message -->
+
+
+<!-- Start Divider Top -->
+<div id="divider"></div>
+<!-- End Divider Top -->
+
+

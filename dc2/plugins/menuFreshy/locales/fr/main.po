@@ -1,0 +1,40 @@
+# French translation of DotClear
+# Copyright (C) 2006 Free Software Foundation, Inc.
+# Vincent Simonin, 2006.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: DotClear 2\n"
+"Report-Msgid-Bugs-To: <cpu.sylvestre@free.fr>\n"
+"POT-Creation-Date: 2006-05-07 18:30+0200\n"
+"PO-Revision-Date: 2006-05-07 18:30+0200\n"
+"Last-Translator: Vincent Simonin\n"
+"Language-Team: French <l10n@list.dotclear.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: _admin.php:37
+msgid "Lastest Categ. And Post"
+msgstr "Dernières Catég. et Billets"
+
+#: _admin.php:39
+msgid "Limit (empty means 10 comments):"
+msgstr "Nombre de commentaires (laissez vide pour afficher 10 commentaires)&nbsp;:"
+
+#: _admin.php:40
+msgid "Number letter to keep (empty means all the comment content):"
+msgstr "Nombre de caractère à conserver (laissez vide pour afficher tout le commentaire)&nbsp;:"
+
+#: _public.php:77
+msgid "Author"
+msgstr "Auteur"
+
+#: _public.php:77
+msgid "said:"
+msgstr "a écrit&nbsp;:"
+
+#: _public.php:78
+msgid "Go to the comment"
+msgstr "Aller au commentaire"
